@@ -1,0 +1,9 @@
+{
+  "name": "evolusi-pl-24-535556-sv-24264",
+  "version": "1.0.0",
+  "description": "Aplikasi web sederhana untuk konversi suhu Celsius ke Fahrenheit",
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  }
+}
