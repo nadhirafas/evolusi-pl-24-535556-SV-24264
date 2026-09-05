@@ -1,36 +1,18 @@
-# \# Konverter Suhu
+# KONVERTER SUHU
 
-# 
+APLIKASI WEB SEDERHANA UNTUK MENGONVERSI SUHU DARI CELSIUS KE FAHRENHEIT.
 
-# Aplikasi web sederhana untuk mengonversi suhu dari Celsius ke Fahrenheit.
+## TEKNOLOGI
 
-# 
+- HTML
+- CSS
+- JAVASCRIPT
+- NODE.JS
+- GITHUB ACTIONS
 
-# \## Teknologi
+## CARA MENJALANKAN
 
-# 
+JALANKAN PROJECT MENGGUNAKAN SERVER LOKAL:
 
-# \- HTML
-
-# \- CSS
-
-# \- JavaScript
-
-# \- Node.js
-
-# \- GitHub Actions
-
-# 
-
-# \## Cara Menjalankan
-
-# 
-
-# Jalankan project menggunakan server lokal:
-
-# 
-
-# ```bash
-
-# npx serve .
-
+```bash
+npx serve .
