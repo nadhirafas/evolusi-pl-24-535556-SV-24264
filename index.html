@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konverter Suhu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Konverter Suhu</h1>
+        <p>Konversi suhu dari Celsius ke Fahrenheit.</p>
+
+        <div class="form-group">
+            <label for="celsius">Suhu Celsius</label>
+            <input
+                id="celsius"
+                type="number"
+                step="any"
+                placeholder="Contoh: 25"
+            >
+        </div>
+
+        <button id="convertButton" type="button">Konversi</button>
+
+        <p id="result" aria-live="polite">
+            Hasil akan tampil di sini.
+        </p>
+    </main>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>
