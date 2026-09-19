@@ -1,11 +1,28 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 set -e
 
-echo "Step 1: ..."
-echo "Step 2: ..."
-echo "Step 3: ..."
-echo "Step 4: ..."
-echo "Step 5: ..."
-echo "Step 6: ..."
-echo "Step 7: ..."
+cd /var/www/aplikasi
+
+# 1. Kunci pintu — tampilkan halaman pemeliharaan
+php artisan down --retry=60
+
+# 2. Ambil kode terbaru
+git pull origin main
+
+# 3. Pasang dependensi tanpa paket dev
+composer install --no-dev --optimize-autoloader
+
+# 4. Ubah skema basis data
+php artisan migrate --force
+
+# 5. Bangun ulang cache
+php artisan config:cache
+php artisan route:cache
+php artisan view:cache
+
+# 6. Muat ulang pekerja antrean
+php artisan queue:restart
+
+# 7. Buka pintu kembali
+php artisan up
