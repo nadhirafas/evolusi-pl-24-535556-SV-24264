@@ -1,9 +1,17 @@
 {
-  "name": "evolusi-pl-24-535556-sv-24264",
-  "version": "1.0.0",
-  "description": "Aplikasi web sederhana untuk konversi suhu Celsius ke Fahrenheit",
-  "type": "module",
-  "scripts": {
-    "test": "node --test test/*.test.js"
-  }
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "dev": "vite"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.0.0",
+        "axios": "^1.11.0",
+        "concurrently": "^9.0.1",
+        "laravel-vite-plugin": "^2.0.0",
+        "tailwindcss": "^4.0.0",
+        "vite": "^7.0.7"
+    }
 }
