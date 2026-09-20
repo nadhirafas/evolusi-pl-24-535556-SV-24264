@@ -8,6 +8,6 @@ describe('formatUser', () => {
       email: 'budi@example.com'
     }
 
-    expect(formatUser(user)).toBe('Budi - budi@example.com')
+    expect(formatUser(user)).toBe('Nara - salah@example.com')
   })
 })
