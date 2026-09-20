@@ -6,6 +6,7 @@ on:
       - main
       - dev
       - 'feature/**'
+
   pull_request:
     branches:
       - main
@@ -25,7 +26,12 @@ jobs:
         with:
           node-version: 20
 
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm ci
+
       - name: Jalankan test
+        working-directory: frontend
         run: npm test
 
   lint:
