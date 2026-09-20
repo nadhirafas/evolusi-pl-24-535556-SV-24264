@@ -1,10 +1,12 @@
 <?php
 
-use App\Models\User;
+use App\Models\Tugas;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/users', function () {
+Route::get('/tugas', function () {
     return response()->json(
-        User::select('id', 'name', 'email')->get()
+        Tugas::all()
     );
 });
+
+
