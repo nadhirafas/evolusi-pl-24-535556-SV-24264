@@ -32,4 +32,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ghcr.io/kepl2026/evolusi-pl-24-535556-sv-24264:${{ github.sha }}
+          tags: ghcr.io/nadhirafas/evolusi-pl-24-535556-sv-24264:${{ github.sha }}
